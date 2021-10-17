@@ -1,0 +1,16 @@
+GNU nano 5.9                test.asm
+global _start
+_start:
+
+        mov ax,[n1]
+        mov ax, bx
+        inc bx
+        inc bx
+        inc bx
+        inc bx
+        inc bx
+        inc bx
+        inc bx
+        mov ax, 1
+        int 0x80
+n1: dw 0
