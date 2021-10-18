@@ -1,0 +1,19 @@
+GNU nano 5.9                test.asm
+global _start
+_start:
+        mov ax, 5
+        mov bx, 10
+        add bx,ax
+        cmp bx, [n1]
+        je _bz
+        jne _et8
+_bz:
+        mov ax,6
+        add bx,ax
+        call _et8
+
+_et8:
+        mov ax, 1
+        int 0x80
+
+n1: dw 15
